@@ -1,0 +1,20 @@
+{
+  "name": "signalpath-weather",
+  "version": "1.0.0",
+  "description": "Sample project to provide with the forecast to given locations based on Latitude and Longitude",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start:daily": "node index.js forecast",
+    "start:hourly": "node index.js forecast/hourly"
+  },
+  "repository": "https://github.com/ClownChu/signalpath-weather.git",
+  "author": "Vitor de Souza <vitordesouza@hotmail.com.br>",
+  "keywords": [],
+  "license": "Unlicense",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.24.0",
+    "eslint": "^8.2.0"
+  }
+}

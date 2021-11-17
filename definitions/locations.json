@@ -1,0 +1,14 @@
+{
+    "Place 1": { 
+        "latitude": 36.0265, 
+        "longitude": -82.0465 
+    },
+    "Place 2": { 
+        "latitude": 37.4156, 
+        "longitude": -79.8815
+    },
+    "Place 3": { 
+        "latitude": 33.8024, 
+        "longitude": -84.4016
+    }
+}
