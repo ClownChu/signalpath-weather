@@ -1,7 +1,7 @@
 # SignalPath - National Weather Service Forecast Retriever
 ## JavaScript + Node.js Version
 
-Sample project to provide with forecasts (`periodic`/`hourly`) to given locations based on `Latitude` and `Longitude`. written following the [Chain-of-responsibility pattern](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern).
+Sample project to provide weather forecasts (`daily`/`hourly`) to given locations based on `latitude` and `longitude`. written following the [Chain-of-responsibility pattern](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern).
 
 ## Table of Content
 
@@ -10,7 +10,7 @@ Sample project to provide with forecasts (`periodic`/`hourly`) to given location
   - [Prerequisites](#prerequisites)
   - [Build and run](#build-and-run)
     - [Cloning and getting repository ready](#cloning-and-getting-repository-ready)
-    - [Getting forecast data](#getting-forecast-data)
+    - [Getting weather forecast data](#getting-weather-forecast-data)
 - [Available yarn scripts](#available-yarn-scripts)
 - [File structure](#file-structure)
 - [Output example](#output-example)
@@ -19,17 +19,17 @@ Sample project to provide with forecasts (`periodic`/`hourly`) to given location
 
 ## What's included
 
-- Uses [National Weather Service public API](https://www.weather.gov/documentation/services-web-api) to retrieve forecast data.
+- Uses [National Weather Service public API](https://www.weather.gov/documentation/services-web-api) to retrieve weather forecast data.
   - Sample JSON object of `Location` in [definitions](/definitions) folder.
   - Sample [Handlers](/handlers).
-- Provides with `text file` output containing requested locations forecast information.
+- Provides text file output containing requested locations weather forecast information.
 - Written as close as possible to [Chain-of-responsibility pattern](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern).
 - Uses [`eslint`](https://eslint.org/) with recommended rules to enforce consistent code style.
 - Uses [`yarn`](https://yarnpkg.com/en/) scripts for common operations.
 
 ## Quick Start
 
-Getting started with this project is easy, a few steps and you should be able to start requesting forecast data to locations.
+Getting started with this project is easy, a few steps and you should be able to start requesting weather forecast data to locations.
 
 ### Prerequisites
 
@@ -54,20 +54,20 @@ cd signalpath-weather
 yarn install
 ```
 
-#### Getting forecast data
+#### Getting weather forecast data
 - Start the features execution:
 ```bash
 yarn start:[forecastType+] [locations* (separated by comma)]
 ```
 > Valid `forecastType`: `daily`, `hourly`
 
-##### Forecast data will output as a `text file` called `forecast.txt` in the project's root directory.
+##### Weather forecast data will output in a file called `forecast.txt` in the project's root directory.
 
 ## Available yarn scripts
 
 - `install` - install all project dependencies only.
-- `start:daily` - collect daily forecast data for specified location(s).
-- `start:hourly` - collect hourly forecast data for specified location(s).
+- `start:daily` - collect daily weather forecast data for specified location(s).
+- `start:hourly` - collect hourly weather forecast data for specified location(s).
 - `lint` - check for code violations.
 
 ## File structure
